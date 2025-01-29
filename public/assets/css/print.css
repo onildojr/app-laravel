@@ -1,0 +1,3010 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-size: 14px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+  max-height: 150px;
+}
+
+.tag {
+  padding: 3px 10px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 5px;
+  text-wrap: nowrap;
+  font-size: 12px;
+}
+.tag i {
+  margin-right: 5px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #000;
+  margin: 10px 0 5px 0;
+  width: 100%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.ta-right {
+  text-align: right;
+}
+
+.va-top {
+  vertical-align: top;
+}
+
+table {
+  table-layout: fixed;
+}
+
+td {
+  vertical-align: top;
+}
+
+.mp-20 {
+  padding-top: 20px;
+}
+
+.mp-50 {
+  padding-top: 50px;
+}
+
+.va-baseline {
+  vertical-align: bottom;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media print {
+  @page {
+    margin: 1cm;
+  }
+  body {
+    -webkit-print-color-adjust: exact;
+    font-size: 8pt;
+    margin: 0;
+    padding: 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  th, td {
+    text-align: left;
+    word-wrap: break-word;
+  }
+  td {
+    width: 15%;
+  }
+  .no-border {
+    border: none;
+  }
+  .signature {
+    height: 50px;
+  }
+  img {
+    max-height: 2.5cm;
+  }
+  .logo {
+    height: 0.9cm;
+  }
+  .tag {
+    font-size: 7.5pt;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 10px 0 5px 0;
+    width: 100%;
+  }
+}
+:root {
+  --active-color: #077129;
+  --active-color-light: rgb(9.975, 161.025, 58.425);
+  --active-color-dark: rgb(4.025, 64.975, 23.575);
+  --active-color-alpha: rgba(7, 113, 41, 0.25);
+  --active-color-glow: rgba(7, 113, 41, 0.9);
+  --active-color-focus: rgba(7, 113, 41, 0.15);
+  --active-color-rgb: rgba(7, 113, 41, 0.1);
+}
+
+:root {
+  --white-0: #FFFFFF;
+  --red-50: #FFEBEE;
+  --red-100: #fde4e1;
+  --red-200: #EF9A9A;
+  --red-300: #E57373;
+  --red-400: #EF5350;
+  --red-500: #e1342a;
+  --red-600: #E53935;
+  --red-700: #D32F2F;
+  --red-800: #C62828;
+  --red-900: #B71C1C;
+  --pink-50: #FCE4EC;
+  --pink-100: #F8BBD0;
+  --pink-200: #F48FB1;
+  --pink-300: #F06292;
+  --pink-400: #EC407A;
+  --pink-500: #E91E63;
+  --pink-600: #D81B60;
+  --pink-700: #C2185B;
+  --pink-800: #AD1457;
+  --pink-900: #880E4F;
+  --purple-50: #F3E5F5;
+  --purple-100: #E1BEE7;
+  --purple-200: #CE93D8;
+  --purple-300: #BA68C8;
+  --purple-400: #AB47BC;
+  --purple-500: #9C27B0;
+  --purple-600: #8E24AA;
+  --purple-700: #7B1FA2;
+  --purple-800: #6A1B9A;
+  --purple-900: #4A148C;
+  --deep-purple-50: #EDE7F6;
+  --deep-purple-100: #D1C4E9;
+  --deep-purple-200: #B39DDB;
+  --deep-purple-300: #9575CD;
+  --deep-purple-400: #7E57C2;
+  --deep-purple-500: #673AB7;
+  --deep-purple-600: #5E35B1;
+  --deep-purple-700: #512DA8;
+  --deep-purple-800: #4527A0;
+  --deep-purple-900: #311B92;
+  --indigo-50: #E8EAF6;
+  --indigo-100: #C5CAE9;
+  --indigo-200: #9FA8DA;
+  --indigo-300: #7986CB;
+  --indigo-400: #5C6BC0;
+  --indigo-500: #3F51B5;
+  --indigo-600: #3949AB;
+  --indigo-700: #303F9F;
+  --indigo-800: #283593;
+  --indigo-900: #1A237E;
+  --blue-50: #E3F2FD;
+  --blue-100: #BBDEFB;
+  --blue-200: #90CAF9;
+  --blue-300: #64B5F6;
+  --blue-400: #42A5F5;
+  --blue-500: #2196F3;
+  --blue-600: #1E88E5;
+  --blue-700: #1976D2;
+  --blue-800: #1565C0;
+  --blue-900: #0D47A1;
+  --lightblue-50: #E1F5FE;
+  --lightblue-100: #B3E5FC;
+  --lightblue-200: #81D4FA;
+  --lightblue-300: #4FC3F7;
+  --lightblue-400: #29B6F6;
+  --lightblue-500: #03A9F4;
+  --lightblue-600: #039BE5;
+  --lightblue-700: #0288D1;
+  --lightblue-800: #0277BD;
+  --lightblue-900: #01579B;
+  --cyan-50: #E0F7FA;
+  --cyan-100: #B2EBF2;
+  --cyan-200: #80DEEA;
+  --cyan-300: #4DD0E1;
+  --cyan-400: #26C6DA;
+  --cyan-500: #00BCD4;
+  --cyan-600: #00ACC1;
+  --cyan-700: #0097A7;
+  --cyan-800: #00838F;
+  --cyan-900: #006064;
+  --teal-50: #E0F2F1;
+  --teal-100: #B2DFDB;
+  --teal-200: #80CBC4;
+  --teal-300: #4DB6AC;
+  --teal-400: #26A69A;
+  --teal-500: #009688;
+  --teal-600: #00897B;
+  --teal-700: #00796B;
+  --teal-800: #00695C;
+  --teal-900: #004D40;
+  --green-50: #E4F1E4;
+  --green-100: #C9E3C9;
+  --green-200: #A7D1A7;
+  --green-300: #85BE85;
+  --green-400: #69B169;
+  --green-500: #519838;
+  --green-600: #468A30;
+  --green-700: #3C7A28;
+  --green-800: #316821;
+  --green-900: #245017;
+  --light-green-50: #e9fcf3;
+  --light-green-100: #c6f5dd;
+  --light-green-200: #d4f9e1;
+  --light-green-300: #84d1a8;
+  --light-green-400: #42b887;
+  --light-green-500: #047845;
+  --light-green-600: #046e3f;
+  --light-green-700: #046038;
+  --light-green-800: #034f2e;
+  --light-green-900: #02341f;
+  --lime-50: #F9FBE7;
+  --lime-100: #F0F4C3;
+  --lime-200: #E6EE9C;
+  --lime-300: #DCE775;
+  --lime-400: #D4E157;
+  --lime-500: #CDDC39;
+  --lime-600: #C0CA33;
+  --lime-700: #AFB42B;
+  --lime-800: #9E9D24;
+  --lime-900: #827717;
+  --yellow-50: #FFFDE7;
+  --yellow-100: #FFF9C4;
+  --yellow-200: #FFF59D;
+  --yellow-300: #FFF176;
+  --yellow-400: #FFEE58;
+  --yellow-500: #FFEB3B;
+  --yellow-600: #FDD835;
+  --yellow-700: #FBC02D;
+  --yellow-800: #F9A825;
+  --yellow-900: #F57F17;
+  --amber-50: #FFF8E1;
+  --amber-100: #FFECB3;
+  --amber-200: #FFE082;
+  --amber-300: #FFD54F;
+  --amber-400: #FFCA28;
+  --amber-500: #FFC107;
+  --amber-600: #FFB300;
+  --amber-700: #FFA000;
+  --amber-800: #FF8F00;
+  --amber-900: #FF6F00;
+  --orange-50: #FFF3E0;
+  --orange-100: #fcd6b8;
+  --orange-200: #fcbe89;
+  --orange-300: #fca45a;
+  --orange-400: #fb9037;
+  --orange-500: #fb7d14;
+  --orange-600: #fb7512;
+  --orange-700: #fa6a0e;
+  --orange-800: #fa600b;
+  --orange-900: #fa4d06;
+  --deep-orange-50: #FBE9E7;
+  --deep-orange-100: #FFCCBC;
+  --deep-orange-200: #FFAB91;
+  --deep-orange-300: #FF8A65;
+  --deep-orange-400: #FF7043;
+  --deep-orange-500: #FF5722;
+  --deep-orange-600: #F4511E;
+  --deep-orange-700: #E64A19;
+  --deep-orange-800: #D84315;
+  --deep-orange-900: #BF360C;
+  --brown-50: #EFEBE9;
+  --brown-100: #D7CCC8;
+  --brown-200: #BCAAA4;
+  --brown-300: #A1887F;
+  --brown-400: #8D6E63;
+  --brown-500: #795548;
+  --brown-600: #6D4C41;
+  --brown-700: #5D4037;
+  --brown-800: #4E342E;
+  --brown-900: #3E2723;
+  --gray-50: #FAFAFA;
+  --gray-100: #F5F5F5;
+  --gray-200: #EEEEEE;
+  --gray-300: #E0E0E0;
+  --gray-400: #BDBDBD;
+  --gray-500: #9E9E9E;
+  --gray-600: #757575;
+  --gray-700: #616161;
+  --gray-800: #424242;
+  --gray-900: #212121;
+  --blue-gray-50: #ECEFF1;
+  --blue-gray-100: #CFD8DC;
+  --blue-gray-200: #B0BEC5;
+  --blue-gray-300: #90A4AE;
+  --blue-gray-400: #78909C;
+  --blue-gray-500: #607D8B;
+  --blue-gray-600: #546E7A;
+  --blue-gray-700: #455A64;
+  --blue-gray-800: #37474F;
+  --blue-gray-900: #263238;
+}
+
+.tx-white-0 {
+  color: #FFFFFF;
+  transition: color 250ms ease-in-out;
+}
+.tx-white-0:hover {
+  color: rgb(242.25, 242.25, 242.25);
+}
+
+.bg-white-0 {
+  background-color: #FFFFFF;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-red-50 {
+  color: #FFEBEE;
+  transition: color 250ms ease-in-out;
+}
+.tx-red-50:hover {
+  color: rgb(255, 209.5, 216.325);
+}
+
+.bg-red-50 {
+  background-color: #FFEBEE;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-red-100 {
+  color: #fde4e1;
+  transition: color 250ms ease-in-out;
+}
+.tx-red-100:hover {
+  color: rgb(251.40625, 206.484375, 201.09375);
+}
+
+.bg-red-100 {
+  background-color: #fde4e1;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-red-200 {
+  color: #EF9A9A;
+  transition: color 250ms ease-in-out;
+}
+.tx-red-200:hover {
+  color: rgb(235.5128205128, 131.9871794872, 131.9871794872);
+}
+
+.bg-red-200 {
+  background-color: #EF9A9A;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-red-300 {
+  color: #E57373;
+  transition: color 250ms ease-in-out;
+}
+.tx-red-300:hover {
+  color: rgb(225.0060240964, 93.4939759036, 93.4939759036);
+}
+
+.bg-red-300 {
+  background-color: #E57373;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-red-400 {
+  color: #EF5350;
+  transition: color 250ms ease-in-out;
+}
+.tx-red-400:hover {
+  color: rgb(236.8638743455, 60.0366492147, 56.6361256545);
+}
+
+.bg-red-400 {
+  background-color: #EF5350;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-red-500 {
+  color: #e1342a;
+  transition: color 250ms ease-in-out;
+}
+.tx-red-500:hover {
+  color: rgb(211.6851851852, 39.7530864198, 29.8148148148);
+}
+
+.bg-red-500 {
+  background-color: #e1342a;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-red-600 {
+  color: #E53935;
+  transition: color 250ms ease-in-out;
+}
+.tx-red-600:hover {
+  color: rgb(226.0921052632, 34.8552631579, 30.4078947368);
+}
+
+.bg-red-600 {
+  background-color: #E53935;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-red-700 {
+  color: #D32F2F;
+  transition: color 250ms ease-in-out;
+}
+.tx-red-700:hover {
+  color: rgb(191.9047619048, 40.5952380952, 40.5952380952);
+}
+
+.bg-red-700 {
+  background-color: #D32F2F;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-red-800 {
+  color: #C62828;
+  transition: color 250ms ease-in-out;
+}
+.tx-red-800:hover {
+  color: rgb(176.7857142857, 35.7142857143, 35.7142857143);
+}
+
+.bg-red-800 {
+  background-color: #C62828;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-red-900 {
+  color: #B71C1C;
+  transition: color 250ms ease-in-out;
+}
+.tx-red-900:hover {
+  color: rgb(160.8838862559, 24.6161137441, 24.6161137441);
+}
+
+.bg-red-900 {
+  background-color: #B71C1C;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-pink-50 {
+  color: #FCE4EC;
+  transition: color 250ms ease-in-out;
+}
+.tx-pink-50:hover {
+  color: rgb(249.45, 205.05, 219.85);
+}
+
+.bg-pink-50 {
+  background-color: #FCE4EC;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-pink-100 {
+  color: #F8BBD0;
+  transition: color 250ms ease-in-out;
+}
+.tx-pink-100:hover {
+  color: rgb(245.62, 163.88, 192.02);
+}
+
+.bg-pink-100 {
+  background-color: #F8BBD0;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-pink-200 {
+  color: #F48FB1;
+  transition: color 250ms ease-in-out;
+}
+.tx-pink-200:hover {
+  color: rgb(241.7195121951, 119.7804878049, 160.8292682927);
+}
+
+.bg-pink-200 {
+  background-color: #F48FB1;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-pink-300 {
+  color: #F06292;
+  transition: color 250ms ease-in-out;
+}
+.tx-pink-300:hover {
+  color: rgb(237.7761627907, 74.7238372093, 129.8401162791);
+}
+
+.bg-pink-300 {
+  background-color: #F06292;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-pink-400 {
+  color: #EC407A;
+  transition: color 250ms ease-in-out;
+}
+.tx-pink-400:hover {
+  color: rgb(233.6928571429, 40.8071428571, 105.85);
+}
+
+.bg-pink-400 {
+  background-color: #EC407A;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-pink-500 {
+  color: #E91E63;
+  transition: color 250ms ease-in-out;
+}
+.tx-pink-500:hover {
+  color: rgb(216.3461538462, 21.1538461538, 87.5);
+}
+
+.bg-pink-500 {
+  background-color: #E91E63;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-pink-600 {
+  color: #D81B60;
+  transition: color 250ms ease-in-out;
+}
+.tx-pink-600:hover {
+  color: rgb(193.3333333333, 24.1666666667, 85.9259259259);
+}
+
+.bg-pink-600 {
+  background-color: #D81B60;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-pink-700 {
+  color: #C2185B;
+  transition: color 250ms ease-in-out;
+}
+.tx-pink-700:hover {
+  color: rgb(171.3073394495, 21.1926605505, 80.3555045872);
+}
+
+.bg-pink-700 {
+  background-color: #C2185B;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-pink-800 {
+  color: #AD1457;
+  transition: color 250ms ease-in-out;
+}
+.tx-pink-800:hover {
+  color: rgb(150.1424870466, 17.3575129534, 75.5051813472);
+}
+
+.bg-pink-800 {
+  background-color: #AD1457;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-pink-900 {
+  color: #880E4F;
+  transition: color 250ms ease-in-out;
+}
+.tx-pink-900:hover {
+  color: rgb(112.88, 11.62, 65.57);
+}
+
+.bg-pink-900 {
+  background-color: #880E4F;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-purple-50 {
+  color: #F3E5F5;
+  transition: color 250ms ease-in-out;
+}
+.tx-purple-50:hover {
+  color: rgb(234.5, 210.5833333333, 237.9166666667);
+}
+
+.bg-purple-50 {
+  background-color: #F3E5F5;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-purple-100 {
+  color: #E1BEE7;
+  transition: color 250ms ease-in-out;
+}
+.tx-purple-100:hover {
+  color: rgb(216.404494382, 171.3764044944, 224.1235955056);
+}
+
+.bg-purple-100 {
+  background-color: #E1BEE7;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-purple-200 {
+  color: #CE93D8;
+  transition: color 250ms ease-in-out;
+}
+.tx-purple-200:hover {
+  color: rgb(197.5, 128.2653061224, 209.2346938776);
+}
+
+.bg-purple-200 {
+  background-color: #CE93D8;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-purple-300 {
+  color: #BA68C8;
+  transition: color 250ms ease-in-out;
+}
+.tx-purple-300:hover {
+  color: rgb(177.4587378641, 85.3082524272, 193.1917475728);
+}
+
+.bg-purple-300 {
+  background-color: #BA68C8;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-purple-400 {
+  color: #AB47BC;
+  transition: color 250ms ease-in-out;
+}
+.tx-purple-400:hover {
+  color: rgb(155.3565737052, 62.328685259, 171.171314741);
+}
+
+.bg-purple-400 {
+  background-color: #AB47BC;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-purple-500 {
+  color: #9C27B0;
+  transition: color 250ms ease-in-out;
+}
+.tx-purple-500:hover {
+  color: rgb(137.4976744186, 34.3744186047, 155.1255813953);
+}
+
+.bg-purple-500 {
+  background-color: #9C27B0;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-purple-600 {
+  color: #8E24AA;
+  transition: color 250ms ease-in-out;
+}
+.tx-purple-600:hover {
+  color: rgb(124.4223300971, 31.5436893204, 148.9563106796);
+}
+
+.bg-purple-600 {
+  background-color: #8E24AA;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-purple-700 {
+  color: #7B1FA2;
+  transition: color 250ms ease-in-out;
+}
+.tx-purple-700:hover {
+  color: rgb(106.7487046632, 26.9041450777, 140.5958549223);
+}
+
+.bg-purple-700 {
+  background-color: #7B1FA2;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-purple-800 {
+  color: #6A1B9A;
+  transition: color 250ms ease-in-out;
+}
+.tx-purple-800:hover {
+  color: rgb(91.0662983425, 23.1961325967, 132.3038674033);
+}
+
+.bg-purple-800 {
+  background-color: #6A1B9A;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-purple-900 {
+  color: #4A148C;
+  transition: color 250ms ease-in-out;
+}
+.tx-purple-900:hover {
+  color: rgb(62.20625, 16.8125, 117.6875);
+}
+
+.bg-purple-900 {
+  background-color: #4A148C;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-purple-50 {
+  color: #EDE7F6;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-purple-50:hover {
+  color: rgb(223.0909090909, 212.4545454545, 239.0454545455);
+}
+
+.bg-deep-purple-50 {
+  background-color: #EDE7F6;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-purple-100 {
+  color: #D1C4E9;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-purple-100:hover {
+  color: rgb(194.5185185185, 177.4259259259, 226.0740740741);
+}
+
+.bg-deep-purple-100 {
+  background-color: #D1C4E9;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-purple-200 {
+  color: #B39DDB;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-purple-200:hover {
+  color: rgb(164.5373134328, 138.3507462687, 212.1492537313);
+}
+
+.bg-deep-purple-200 {
+  background-color: #B39DDB;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-purple-300 {
+  color: #9575CD;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-purple-300:hover {
+  color: rgb(134.6223404255, 98.2819148936, 198.2180851064);
+}
+
+.bg-deep-purple-300 {
+  background-color: #9575CD;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-purple-400 {
+  color: #7E57C2;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-purple-400:hover {
+  color: rgb(111.635371179, 68.2925764192, 187.2074235808);
+}
+
+.bg-deep-purple-400 {
+  background-color: #7E57C2;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-purple-500 {
+  color: #673AB7;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-purple-500:hover {
+  color: rgb(92.101659751, 51.8630705394, 163.6369294606);
+}
+
+.bg-deep-purple-500 {
+  background-color: #673AB7;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-purple-600 {
+  color: #5E35B1;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-purple-600:hover {
+  color: rgb(83.5782608696, 47.1239130435, 157.3760869565);
+}
+
+.bg-deep-purple-600 {
+  background-color: #5E35B1;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-purple-700 {
+  color: #512DA8;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-purple-700:hover {
+  color: rgb(71.3028169014, 39.6126760563, 147.8873239437);
+}
+
+.bg-deep-purple-700 {
+  background-color: #512DA8;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-purple-800 {
+  color: #4527A0;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-purple-800:hover {
+  color: rgb(60.1582914573, 34.0025125628, 139.4974874372);
+}
+
+.bg-deep-purple-800 {
+  background-color: #4527A0;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-purple-900 {
+  color: #311B92;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-purple-900:hover {
+  color: rgb(41.7774566474, 23.0202312139, 124.4797687861);
+}
+
+.bg-deep-purple-900 {
+  background-color: #311B92;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-indigo-50 {
+  color: #E8EAF6;
+  transition: color 250ms ease-in-out;
+}
+.tx-indigo-50:hover {
+  color: rgb(213.671875, 217.265625, 238.828125);
+}
+
+.bg-indigo-50 {
+  background-color: #E8EAF6;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-indigo-100 {
+  color: #C5CAE9;
+  transition: color 250ms ease-in-out;
+}
+.tx-indigo-100:hover {
+  color: rgb(178.5125, 185.10625, 225.9875);
+}
+
+.bg-indigo-100 {
+  background-color: #C5CAE9;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-indigo-200 {
+  color: #9FA8DA;
+  transition: color 250ms ease-in-out;
+}
+.tx-indigo-200:hover {
+  color: rgb(140.5939849624, 151.3195488722, 210.9060150376);
+}
+
+.bg-indigo-200 {
+  background-color: #9FA8DA;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-indigo-300 {
+  color: #7986CB;
+  transition: color 250ms ease-in-out;
+}
+.tx-indigo-300:hover {
+  color: rgb(102.6290322581, 117.4112903226, 195.8709677419);
+}
+
+.bg-indigo-300 {
+  background-color: #7986CB;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-indigo-400 {
+  color: #5C6BC0;
+  transition: color 250ms ease-in-out;
+}
+.tx-indigo-400:hover {
+  color: rgb(73.6084070796, 90.3008849558, 184.8915929204);
+}
+
+.bg-indigo-400 {
+  background-color: #5C6BC0;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-indigo-500 {
+  color: #3F51B5;
+  transition: color 250ms ease-in-out;
+}
+.tx-indigo-500:hover {
+  color: rgb(56.4159836066, 72.5348360656, 162.0840163934);
+}
+
+.bg-indigo-500 {
+  background-color: #3F51B5;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-indigo-600 {
+  color: #3949AB;
+  transition: color 250ms ease-in-out;
+}
+.tx-indigo-600:hover {
+  color: rgb(50.625, 64.8355263158, 151.875);
+}
+
+.bg-indigo-600 {
+  background-color: #3949AB;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-indigo-700 {
+  color: #303F9F;
+  transition: color 250ms ease-in-out;
+}
+.tx-indigo-700:hover {
+  color: rgb(42.0869565217, 55.2391304348, 139.4130434783);
+}
+
+.bg-indigo-700 {
+  background-color: #303F9F;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-indigo-800 {
+  color: #283593;
+  transition: color 250ms ease-in-out;
+}
+.tx-indigo-800:hover {
+  color: rgb(34.5454545455, 45.7727272727, 126.9545454545);
+}
+
+.bg-indigo-800 {
+  background-color: #283593;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-indigo-900 {
+  color: #1A237E;
+  transition: color 250ms ease-in-out;
+}
+.tx-indigo-900:hover {
+  color: rgb(21.6381578947, 29.1282894737, 104.8618421053);
+}
+
+.bg-indigo-900 {
+  background-color: #1A237E;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-50 {
+  color: #E3F2FD;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-50:hover {
+  color: rgb(203.2, 230.95, 251.3);
+}
+
+.bg-blue-50 {
+  background-color: #E3F2FD;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-100 {
+  color: #BBDEFB;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-100:hover {
+  color: rgb(162.9166666667, 210.3125, 249.5833333333);
+}
+
+.bg-blue-100 {
+  background-color: #BBDEFB;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-200 {
+  color: #90CAF9;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-200:hover {
+  color: rgb(119.8076923077, 190.4487179487, 247.6923076923);
+}
+
+.bg-blue-200 {
+  background-color: #90CAF9;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-300 {
+  color: #64B5F6;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-300:hover {
+  color: rgb(75.8993902439, 169.493902439, 244.6006097561);
+}
+
+.bg-blue-300 {
+  background-color: #64B5F6;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-400 {
+  color: #42A5F5;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-400:hover {
+  color: rgb(41.7814070352, 153.4673366834, 243.7185929648);
+}
+
+.bg-blue-400 {
+  background-color: #42A5F5;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-500 {
+  color: #2196F3;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-500:hover {
+  color: rgb(12.8461538462, 138.0961538462, 237.6538461538);
+}
+
+.bg-blue-500 {
+  background-color: #2196F3;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-600 {
+  color: #1E88E5;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-600:hover {
+  color: rgb(24.187250996, 122.796812749, 209.312749004);
+}
+
+.bg-blue-600 {
+  background-color: #1E88E5;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-700 {
+  color: #1976D2;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-700:hover {
+  color: rgb(22.2872340426, 105.1957446809, 187.2127659574);
+}
+
+.bg-blue-700 {
+  background-color: #1976D2;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-800 {
+  color: #1565C0;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-800:hover {
+  color: rgb(18.485915493, 88.9084507042, 169.014084507);
+}
+
+.bg-blue-800 {
+  background-color: #1565C0;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-900 {
+  color: #0D47A1;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-900:hover {
+  color: rgb(11.0948275862, 60.5948275862, 137.4051724138);
+}
+
+.bg-blue-900 {
+  background-color: #0D47A1;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lightblue-50 {
+  color: #E1F5FE;
+  transition: color 250ms ease-in-out;
+}
+.tx-lightblue-50:hover {
+  color: rgb(200.3225806452, 236.7741935484, 253.1774193548);
+}
+
+.bg-lightblue-50 {
+  background-color: #E1F5FE;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lightblue-100 {
+  color: #B3E5FC;
+  transition: color 250ms ease-in-out;
+}
+.tx-lightblue-100:hover {
+  color: rgb(154.4683544304, 220.6075949367, 251.0316455696);
+}
+
+.bg-lightblue-100 {
+  background-color: #B3E5FC;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lightblue-200 {
+  color: #81D4FA;
+  transition: color 250ms ease-in-out;
+}
+.tx-lightblue-200:hover {
+  color: rgb(104.4732824427, 203.6297709924, 249.0267175573);
+}
+
+.bg-lightblue-200 {
+  background-color: #81D4FA;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lightblue-300 {
+  color: #4FC3F7;
+  transition: color 250ms ease-in-out;
+}
+.tx-lightblue-300:hover {
+  color: rgb(54.6086956522, 186.6847826087, 245.8913043478);
+}
+
+.bg-lightblue-300 {
+  background-color: #4FC3F7;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lightblue-400 {
+  color: #29B6F6;
+  transition: color 250ms ease-in-out;
+}
+.tx-lightblue-400:hover {
+  color: rgb(16.5291479821, 173.6524663677, 244.9708520179);
+}
+
+.bg-lightblue-400 {
+  background-color: #29B6F6;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lightblue-500 {
+  color: #03A9F4;
+  transition: color 250ms ease-in-out;
+}
+.tx-lightblue-500:hover {
+  color: rgb(2.6902834008, 151.5526315789, 218.8097165992);
+}
+
+.bg-lightblue-500 {
+  background-color: #03A9F4;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lightblue-600 {
+  color: #039BE5;
+  transition: color 250ms ease-in-out;
+}
+.tx-lightblue-600:hover {
+  color: rgb(2.6702586207, 137.963362069, 203.8297413793);
+}
+
+.bg-lightblue-600 {
+  background-color: #039BE5;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lightblue-700 {
+  color: #0288D1;
+  transition: color 250ms ease-in-out;
+}
+.tx-lightblue-700:hover {
+  color: rgb(1.7582938389, 119.5639810427, 183.7417061611);
+}
+
+.bg-lightblue-700 {
+  background-color: #0288D1;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lightblue-800 {
+  color: #0277BD;
+  transition: color 250ms ease-in-out;
+}
+.tx-lightblue-800:hover {
+  color: rgb(1.7329842932, 103.112565445, 163.7670157068);
+}
+
+.bg-lightblue-800 {
+  background-color: #0277BD;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lightblue-900 {
+  color: #01579B;
+  transition: color 250ms ease-in-out;
+}
+.tx-lightblue-900:hover {
+  color: rgb(0.8365384615, 72.7788461538, 129.6634615385);
+}
+
+.bg-lightblue-900 {
+  background-color: #01579B;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-cyan-50 {
+  color: #E0F7FA;
+  transition: color 250ms ease-in-out;
+}
+.tx-cyan-50:hover {
+  color: rgb(202.0416666667, 241.3333333333, 246.4583333333);
+}
+
+.bg-cyan-50 {
+  background-color: #E0F7FA;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-cyan-100 {
+  color: #B2EBF2;
+  transition: color 250ms ease-in-out;
+}
+.tx-cyan-100:hover {
+  color: rgb(156.1833333333, 229.3333333333, 238.3166666667);
+}
+
+.bg-cyan-100 {
+  background-color: #B2EBF2;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-cyan-200 {
+  color: #80DEEA;
+  transition: color 250ms ease-in-out;
+}
+.tx-cyan-200:hover {
+  color: rgb(106.1182432432, 216.3141891892, 230.3817567568);
+}
+
+.bg-cyan-200 {
+  background-color: #80DEEA;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-cyan-300 {
+  color: #4DD0E1;
+  transition: color 250ms ease-in-out;
+}
+.tx-cyan-300:hover {
+  color: rgb(55.1778846154, 202.2379807692, 221.3221153846);
+}
+
+.bg-cyan-300 {
+  background-color: #4DD0E1;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-cyan-400 {
+  color: #26C6DA;
+  transition: color 250ms ease-in-out;
+}
+.tx-cyan-400:hover {
+  color: rgb(33.5767716535, 178.7736220472, 196.9232283465);
+}
+
+.bg-cyan-400 {
+  background-color: #26C6DA;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-cyan-500 {
+  color: #00BCD4;
+  transition: color 250ms ease-in-out;
+}
+.tx-cyan-500:hover {
+  color: rgb(0, 165.3867924528, 186.5);
+}
+
+.bg-cyan-500 {
+  background-color: #00BCD4;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-cyan-600 {
+  color: #00ACC1;
+  transition: color 250ms ease-in-out;
+}
+.tx-cyan-600:hover {
+  color: rgb(0, 149.274611399, 167.5);
+}
+
+.bg-cyan-600 {
+  background-color: #00ACC1;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-cyan-700 {
+  color: #0097A7;
+  transition: color 250ms ease-in-out;
+}
+.tx-cyan-700:hover {
+  color: rgb(0, 127.9431137725, 141.5);
+}
+
+.bg-cyan-700 {
+  background-color: #0097A7;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-cyan-800 {
+  color: #00838F;
+  transition: color 250ms ease-in-out;
+}
+.tx-cyan-800:hover {
+  color: rgb(0, 107.6398601399, 117.5);
+}
+
+.bg-cyan-800 {
+  background-color: #00838F;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-cyan-900 {
+  color: #006064;
+  transition: color 250ms ease-in-out;
+}
+.tx-cyan-900:hover {
+  color: rgb(0, 71.52, 74.5);
+}
+
+.bg-cyan-900 {
+  background-color: #006064;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-teal-50 {
+  color: #E0F2F1;
+  transition: color 250ms ease-in-out;
+}
+.tx-teal-50:hover {
+  color: rgb(206.0340909091, 234.4659090909, 232.8863636364);
+}
+
+.bg-teal-50 {
+  background-color: #E0F2F1;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-teal-100 {
+  color: #B2DFDB;
+  transition: color 250ms ease-in-out;
+}
+.tx-teal-100:hover {
+  color: rgb(159.9862385321, 215.5137614679, 210.5779816514);
+}
+
+.bg-teal-100 {
+  background-color: #B2DFDB;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-teal-200 {
+  color: #80CBC4;
+  transition: color 250ms ease-in-out;
+}
+.tx-teal-200:hover {
+  color: rgb(109.9078212291, 195.5921787709, 187.594972067);
+}
+
+.bg-teal-200 {
+  background-color: #80CBC4;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-teal-300 {
+  color: #4DB6AC;
+  transition: color 250ms ease-in-out;
+}
+.tx-teal-300:hover {
+  color: rgb(67.9103585657, 165.5896414343, 156.2868525896);
+}
+
+.bg-teal-300 {
+  background-color: #4DB6AC;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-teal-400 {
+  color: #26A69A;
+  transition: color 250ms ease-in-out;
+}
+.tx-teal-400:hover {
+  color: rgb(33.25, 145.25, 134.75);
+}
+
+.bg-teal-400 {
+  background-color: #26A69A;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-teal-500 {
+  color: #009688;
+  transition: color 250ms ease-in-out;
+}
+.tx-teal-500:hover {
+  color: rgb(0, 124.5, 112.88);
+}
+
+.bg-teal-500 {
+  background-color: #009688;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-teal-600 {
+  color: #00897B;
+  transition: color 250ms ease-in-out;
+}
+.tx-teal-600:hover {
+  color: rgb(0, 111.5, 100.1058394161);
+}
+
+.bg-teal-600 {
+  background-color: #00897B;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-teal-700 {
+  color: #00796B;
+  transition: color 250ms ease-in-out;
+}
+.tx-teal-700:hover {
+  color: rgb(0, 95.5, 84.4504132231);
+}
+
+.bg-teal-700 {
+  background-color: #00796B;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-teal-800 {
+  color: #00695C;
+  transition: color 250ms ease-in-out;
+}
+.tx-teal-800:hover {
+  color: rgb(0, 79.5, 69.6571428571);
+}
+
+.bg-teal-800 {
+  background-color: #00695C;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-teal-900 {
+  color: #004D40;
+  transition: color 250ms ease-in-out;
+}
+.tx-teal-900:hover {
+  color: rgb(0, 51.5, 42.8051948052);
+}
+
+.bg-teal-900 {
+  background-color: #004D40;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-green-50 {
+  color: #E4F1E4;
+  transition: color 250ms ease-in-out;
+}
+.tx-green-50:hover {
+  color: rgb(211.2073170732, 232.2926829268, 211.2073170732);
+}
+
+.bg-green-50 {
+  background-color: #E4F1E4;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-green-100 {
+  color: #C9E3C9;
+  transition: color 250ms ease-in-out;
+}
+.tx-green-100:hover {
+  color: rgb(184.2073170732, 218.2926829268, 184.2073170732);
+}
+
+.bg-green-100 {
+  background-color: #C9E3C9;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-green-200 {
+  color: #A7D1A7;
+  transition: color 250ms ease-in-out;
+}
+.tx-green-200:hover {
+  color: rgb(150.2537313433, 200.2462686567, 150.2537313433);
+}
+
+.bg-green-200 {
+  background-color: #A7D1A7;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-green-300 {
+  color: #85BE85;
+  transition: color 250ms ease-in-out;
+}
+.tx-green-300:hover {
+  color: rgb(116.3636363636, 181.1363636364, 116.3636363636);
+}
+
+.bg-green-300 {
+  background-color: #85BE85;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-green-400 {
+  color: #69B169;
+  transition: color 250ms ease-in-out;
+}
+.tx-green-400:hover {
+  color: rgb(88.2236842105, 168.2763157895, 88.2236842105);
+}
+
+.bg-green-400 {
+  background-color: #69B169;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-green-500 {
+  color: #519838;
+  transition: color 250ms ease-in-out;
+}
+.tx-green-500:hover {
+  color: rgb(71.0697115385, 133.3653846154, 49.1346153846);
+}
+
+.bg-green-500 {
+  background-color: #519838;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-green-600 {
+  color: #468A30;
+  transition: color 250ms ease-in-out;
+}
+.tx-green-600:hover {
+  color: rgb(60.4032258065, 119.0806451613, 41.4193548387);
+}
+
+.bg-green-600 {
+  background-color: #468A30;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-green-700 {
+  color: #3C7A28;
+  transition: color 250ms ease-in-out;
+}
+.tx-green-700:hover {
+  color: rgb(50.5555555556, 102.7962962963, 33.7037037037);
+}
+
+.bg-green-700 {
+  background-color: #3C7A28;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-green-800 {
+  color: #316821;
+  transition: color 250ms ease-in-out;
+}
+.tx-green-800:hover {
+  color: rgb(39.8795620438, 84.6423357664, 26.8576642336);
+}
+
+.bg-green-800 {
+  background-color: #316821;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-green-900 {
+  color: #245017;
+  transition: color 250ms ease-in-out;
+}
+.tx-green-900:hover {
+  color: rgb(27.0873786408, 60.1941747573, 17.3058252427);
+}
+
+.bg-green-900 {
+  background-color: #245017;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-light-green-50 {
+  color: #e9fcf3;
+  transition: color 250ms ease-in-out;
+}
+.tx-light-green-50:hover {
+  color: rgb(210.56, 248.94, 230.76);
+}
+
+.bg-light-green-50 {
+  background-color: #e9fcf3;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-light-green-100 {
+  color: #c6f5dd;
+  transition: color 250ms ease-in-out;
+}
+.tx-light-green-100:hover {
+  color: rgb(176.3059701493, 241.1940298507, 208.0597014925);
+}
+
+.bg-light-green-100 {
+  background-color: #c6f5dd;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-light-green-200 {
+  color: #d4f9e1;
+  transition: color 250ms ease-in-out;
+}
+.tx-light-green-200:hover {
+  color: rgb(189.6224489796, 245.8775510204, 209.387755102);
+}
+
+.bg-light-green-200 {
+  background-color: #d4f9e1;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-light-green-300 {
+  color: #84d1a8;
+  transition: color 250ms ease-in-out;
+}
+.tx-light-green-300:hover {
+  color: rgb(113.4408284024, 202.0591715976, 154.8727810651);
+}
+
+.bg-light-green-300 {
+  background-color: #84d1a8;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-light-green-400 {
+  color: #42b887;
+  transition: color 250ms ease-in-out;
+}
+.tx-light-green-400:hover {
+  color: rgb(59.268, 165.232, 121.23);
+}
+
+.bg-light-green-400 {
+  background-color: #42b887;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-light-green-500 {
+  color: #047845;
+  transition: color 250ms ease-in-out;
+}
+.tx-light-green-500:hover {
+  color: rgb(3.1774193548, 95.3225806452, 54.810483871);
+}
+
+.bg-light-green-500 {
+  background-color: #047845;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-light-green-600 {
+  color: #046e3f;
+  transition: color 250ms ease-in-out;
+}
+.tx-light-green-600:hover {
+  color: rgb(3.1052631579, 85.3947368421, 48.9078947368);
+}
+
+.bg-light-green-600 {
+  background-color: #046e3f;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-light-green-700 {
+  color: #046038;
+  transition: color 250ms ease-in-out;
+}
+.tx-light-green-700:hover {
+  color: rgb(2.98, 71.52, 41.72);
+}
+
+.bg-light-green-700 {
+  background-color: #046038;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-light-green-800 {
+  color: #034f2e;
+  transition: color 250ms ease-in-out;
+}
+.tx-light-green-800:hover {
+  color: rgb(2.0670731707, 54.4329268293, 31.6951219512);
+}
+
+.bg-light-green-800 {
+  background-color: #034f2e;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-light-green-900 {
+  color: #02341f;
+  transition: color 250ms ease-in-out;
+}
+.tx-light-green-900:hover {
+  color: rgb(1.0555555556, 27.4444444444, 16.3611111111);
+}
+
+.bg-light-green-900 {
+  background-color: #02341f;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lime-50 {
+  color: #F9FBE7;
+  transition: color 250ms ease-in-out;
+}
+.tx-lime-50:hover {
+  color: rgb(243.5357142857, 247.3571428571, 209.1428571429);
+}
+
+.bg-lime-50 {
+  background-color: #F9FBE7;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lime-100 {
+  color: #F0F4C3;
+  transition: color 250ms ease-in-out;
+}
+.tx-lime-100:hover {
+  color: rgb(234.6126760563, 240.0492957746, 173.4507042254);
+}
+
+.bg-lime-100 {
+  background-color: #F0F4C3;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lime-200 {
+  color: #E6EE9C;
+  transition: color 250ms ease-in-out;
+}
+.tx-lime-200:hover {
+  color: rgb(224.5043103448, 234.2629310345, 134.2370689655);
+}
+
+.bg-lime-200 {
+  background-color: #E6EE9C;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lime-300 {
+  color: #DCE775;
+  transition: color 250ms ease-in-out;
+}
+.tx-lime-300:hover {
+  color: rgb(214.4907407407, 227.2222222222, 95.2777777778);
+}
+
+.bg-lime-300 {
+  background-color: #DCE775;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lime-400 {
+  color: #D4E157;
+  transition: color 250ms ease-in-out;
+}
+.tx-lime-400:hover {
+  color: rgb(206.4621212121, 221.1363636364, 65.3636363636);
+}
+
+.bg-lime-400 {
+  background-color: #D4E157;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lime-500 {
+  color: #CDDC39;
+  transition: color 250ms ease-in-out;
+}
+.tx-lime-500:hover {
+  color: rgb(197.5300429185, 213.7210300429, 37.7789699571);
+}
+
+.bg-lime-500 {
+  background-color: #CDDC39;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lime-600 {
+  color: #C0CA33;
+  transition: color 250ms ease-in-out;
+}
+.tx-lime-600:hover {
+  color: rgb(172.6482213439, 181.6403162055, 45.8596837945);
+}
+
+.bg-lime-600 {
+  background-color: #C0CA33;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lime-700 {
+  color: #AFB42B;
+  transition: color 250ms ease-in-out;
+}
+.tx-lime-700:hover {
+  color: rgb(154.9887892377, 159.4170403587, 38.0829596413);
+}
+
+.bg-lime-700 {
+  background-color: #AFB42B;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lime-800 {
+  color: #9E9D24;
+  transition: color 250ms ease-in-out;
+}
+.tx-lime-800:hover {
+  color: rgb(137.2319587629, 136.3634020619, 31.2680412371);
+}
+
+.bg-lime-800 {
+  background-color: #9E9D24;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-lime-900 {
+  color: #827717;
+  transition: color 250ms ease-in-out;
+}
+.tx-lime-900:hover {
+  color: rgb(108.3333333333, 99.1666666667, 19.1666666667);
+}
+
+.bg-lime-900 {
+  background-color: #827717;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-yellow-50 {
+  color: #FFFDE7;
+  transition: color 250ms ease-in-out;
+}
+.tx-yellow-50:hover {
+  color: rgb(255, 250.875, 205.5);
+}
+
+.bg-yellow-50 {
+  background-color: #FFFDE7;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-yellow-100 {
+  color: #FFF9C4;
+  transition: color 250ms ease-in-out;
+}
+.tx-yellow-100:hover {
+  color: rgb(255, 246.406779661, 170.5);
+}
+
+.bg-yellow-100 {
+  background-color: #FFF9C4;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-yellow-200 {
+  color: #FFF59D;
+  transition: color 250ms ease-in-out;
+}
+.tx-yellow-200:hover {
+  color: rgb(255, 242.3979591837, 131.5);
+}
+
+.bg-yellow-200 {
+  background-color: #FFF59D;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-yellow-300 {
+  color: #FFF176;
+  transition: color 250ms ease-in-out;
+}
+.tx-yellow-300:hover {
+  color: rgb(255, 238.3941605839, 92.5);
+}
+
+.bg-yellow-300 {
+  background-color: #FFF176;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-yellow-400 {
+  color: #FFEE58;
+  transition: color 250ms ease-in-out;
+}
+.tx-yellow-400:hover {
+  color: rgb(255, 235.4041916168, 62.5);
+}
+
+.bg-yellow-400 {
+  background-color: #FFEE58;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-yellow-500 {
+  color: #FFEB3B;
+  transition: color 250ms ease-in-out;
+}
+.tx-yellow-500:hover {
+  color: rgb(255, 232.3979591837, 33.5);
+}
+
+.bg-yellow-500 {
+  background-color: #FFEB3B;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-yellow-600 {
+  color: #FDD835;
+  transition: color 250ms ease-in-out;
+}
+.tx-yellow-600:hover {
+  color: rgb(252.75, 211.125, 27.75);
+}
+
+.bg-yellow-600 {
+  background-color: #FDD835;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-yellow-700 {
+  color: #FBC02D;
+  transition: color 250ms ease-in-out;
+}
+.tx-yellow-700:hover {
+  color: rgb(250.523364486, 184.4929906542, 19.976635514);
+}
+
+.bg-yellow-700 {
+  background-color: #FBC02D;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-yellow-800 {
+  color: #F9A825;
+  transition: color 250ms ease-in-out;
+}
+.tx-yellow-800:hover {
+  color: rgb(248.3169642857, 158.0959821429, 12.1830357143);
+}
+
+.bg-yellow-800 {
+  background-color: #F9A825;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-yellow-900 {
+  color: #F57F17;
+  transition: color 250ms ease-in-out;
+}
+.tx-yellow-900:hover {
+  color: rgb(232.479338843, 114.2355371901, 10.020661157);
+}
+
+.bg-yellow-900 {
+  background-color: #F57F17;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-amber-50 {
+  color: #FFF8E1;
+  transition: color 250ms ease-in-out;
+}
+.tx-amber-50:hover {
+  color: rgb(255, 242.05, 199.5);
+}
+
+.bg-amber-50 {
+  background-color: #FFF8E1;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-amber-100 {
+  color: #FFECB3;
+  transition: color 250ms ease-in-out;
+}
+.tx-amber-100:hover {
+  color: rgb(255, 229.625, 153.5);
+}
+
+.bg-amber-100 {
+  background-color: #FFECB3;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-amber-200 {
+  color: #FFE082;
+  transition: color 250ms ease-in-out;
+}
+.tx-amber-200:hover {
+  color: rgb(255, 217.676, 104.5);
+}
+
+.bg-amber-200 {
+  background-color: #FFE082;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-amber-300 {
+  color: #FFD54F;
+  transition: color 250ms ease-in-out;
+}
+.tx-amber-300:hover {
+  color: rgb(255, 206.9147727273, 53.5);
+}
+
+.bg-amber-300 {
+  background-color: #FFD54F;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-amber-400 {
+  color: #FFCA28;
+  transition: color 250ms ease-in-out;
+}
+.tx-amber-400:hover {
+  color: rgb(255, 195.7139534884, 14.5);
+}
+
+.bg-amber-400 {
+  background-color: #FFCA28;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-amber-500 {
+  color: #FFC107;
+  transition: color 250ms ease-in-out;
+}
+.tx-amber-500:hover {
+  color: rgb(236.5, 177.375, 0);
+}
+
+.bg-amber-500 {
+  background-color: #FFC107;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-amber-600 {
+  color: #FFB300;
+  transition: color 250ms ease-in-out;
+}
+.tx-amber-600:hover {
+  color: rgb(229.5, 161.1, 0);
+}
+
+.bg-amber-600 {
+  background-color: #FFB300;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-amber-700 {
+  color: #FFA000;
+  transition: color 250ms ease-in-out;
+}
+.tx-amber-700:hover {
+  color: rgb(229.5, 144, 0);
+}
+
+.bg-amber-700 {
+  background-color: #FFA000;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-amber-800 {
+  color: #FF8F00;
+  transition: color 250ms ease-in-out;
+}
+.tx-amber-800:hover {
+  color: rgb(229.5, 128.7, 0);
+}
+
+.bg-amber-800 {
+  background-color: #FF8F00;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-amber-900 {
+  color: #FF6F00;
+  transition: color 250ms ease-in-out;
+}
+.tx-amber-900:hover {
+  color: rgb(229.5, 99.9, 0);
+}
+
+.bg-amber-900 {
+  background-color: #FF6F00;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-orange-50 {
+  color: #FFF3E0;
+  transition: color 250ms ease-in-out;
+}
+.tx-orange-50:hover {
+  color: rgb(255, 233.1290322581, 198.5);
+}
+
+.bg-orange-50 {
+  background-color: #FFF3E0;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-orange-100 {
+  color: #fcd6b8;
+  transition: color 250ms ease-in-out;
+}
+.tx-orange-100:hover {
+  color: rgb(250.9662162162, 199.8716216216, 159.5337837838);
+}
+
+.bg-orange-100 {
+  background-color: #fcd6b8;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-orange-200 {
+  color: #fcbe89;
+  transition: color 250ms ease-in-out;
+}
+.tx-orange-200:hover {
+  color: rgb(251.367768595, 176.3016528926, 112.132231405);
+}
+
+.bg-orange-200 {
+  background-color: #fcbe89;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-orange-300 {
+  color: #fca45a;
+  transition: color 250ms ease-in-out;
+}
+.tx-orange-300:hover {
+  color: rgb(251.5446428571, 150.1875, 64.9553571429);
+}
+
+.bg-orange-300 {
+  background-color: #fca45a;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-orange-400 {
+  color: #fb9037;
+  transition: color 250ms ease-in-out;
+}
+.tx-orange-400:hover {
+  color: rgb(250.5, 130.125, 30);
+}
+
+.bg-orange-400 {
+  background-color: #fb9037;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-orange-500 {
+  color: #fb7d14;
+  transition: color 250ms ease-in-out;
+}
+.tx-orange-500:hover {
+  color: rgb(241.3912133891, 111.9644351464, 4.1087866109);
+}
+
+.bg-orange-500 {
+  background-color: #fb7d14;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-orange-600 {
+  color: #fb7512;
+  transition: color 250ms ease-in-out;
+}
+.tx-orange-600:hover {
+  color: rgb(239.4585062241, 104.0684647303, 4.0414937759);
+}
+
+.bg-orange-600 {
+  background-color: #fb7512;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-orange-700 {
+  color: #fa6a0e;
+  transition: color 250ms ease-in-out;
+}
+.tx-orange-700:hover {
+  color: rgb(233.6524390244, 94.0426829268, 4.8475609756);
+}
+
+.bg-orange-700 {
+  background-color: #fa6a0e;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-orange-800 {
+  color: #fa600b;
+  transition: color 250ms ease-in-out;
+}
+.tx-orange-800:hover {
+  color: rgb(230.7710843373, 85.1204819277, 4.7289156627);
+}
+
+.bg-orange-800 {
+  background-color: #fa600b;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-orange-900 {
+  color: #fa4d06;
+  transition: color 250ms ease-in-out;
+}
+.tx-orange-900:hover {
+  color: rgb(225.9625984252, 68.968503937, 4.5374015748);
+}
+
+.bg-orange-900 {
+  background-color: #fa4d06;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-orange-50 {
+  color: #FBE9E7;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-orange-50:hover {
+  color: rgb(247.3571428571, 212.9642857143, 209.1428571429);
+}
+
+.bg-deep-orange-50 {
+  background-color: #FBE9E7;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-orange-100 {
+  color: #FFCCBC;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-orange-100:hover {
+  color: rgb(255, 184.5895522388, 162.5);
+}
+
+.bg-deep-orange-100 {
+  background-color: #FFCCBC;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-orange-200 {
+  color: #FFAB91;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-orange-200:hover {
+  color: rgb(255, 151.5272727273, 119.5);
+}
+
+.bg-deep-orange-200 {
+  background-color: #FFAB91;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-orange-300 {
+  color: #FF8A65;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-orange-300:hover {
+  color: rgb(255, 118.6266233766, 75.5);
+}
+
+.bg-deep-orange-300 {
+  background-color: #FF8A65;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-orange-400 {
+  color: #FF7043;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-orange-400:hover {
+  color: rgb(255, 92.6037234043, 41.5);
+}
+
+.bg-deep-orange-400 {
+  background-color: #FF7043;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-orange-500 {
+  color: #FF5722;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-orange-500:hover {
+  color: rgb(255, 67.6153846154, 8.5);
+}
+
+.bg-deep-orange-500 {
+  background-color: #FF5722;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-orange-600 {
+  color: #F4511E;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-orange-600:hover {
+  color: rgb(236.9173728814, 65.2838983051, 11.5826271186);
+}
+
+.bg-deep-orange-600 {
+  background-color: #F4511E;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-orange-700 {
+  color: #E64A19;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-orange-700:hover {
+  color: rgb(207, 66.6, 22.5);
+}
+
+.bg-deep-orange-700 {
+  background-color: #E64A19;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-orange-800 {
+  color: #D84315;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-orange-800:hover {
+  color: rgb(192.7594936709, 59.7911392405, 18.7405063291);
+}
+
+.bg-deep-orange-800 {
+  background-color: #D84315;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-deep-orange-900 {
+  color: #BF360C;
+  transition: color 250ms ease-in-out;
+}
+.tx-deep-orange-900:hover {
+  color: rgb(167.0073891626, 47.2167487685, 10.4926108374);
+}
+
+.bg-deep-orange-900 {
+  background-color: #BF360C;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-brown-50 {
+  color: #EFEBE9;
+  transition: color 250ms ease-in-out;
+}
+.tx-brown-50:hover {
+  color: rgb(228.2631578947, 221.5789473684, 218.2368421053);
+}
+
+.bg-brown-50 {
+  background-color: #EFEBE9;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-brown-100 {
+  color: #D7CCC8;
+  transition: color 250ms ease-in-out;
+}
+.tx-brown-100:hover {
+  color: rgb(204.2631578947, 190.3105263158, 185.2368421053);
+}
+
+.bg-brown-100 {
+  background-color: #D7CCC8;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-brown-200 {
+  color: #BCAAA4;
+  transition: color 250ms ease-in-out;
+}
+.tx-brown-200:hover {
+  color: rgb(177.1867088608, 156.2816455696, 149.3132911392);
+}
+
+.bg-brown-200 {
+  background-color: #BCAAA4;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-brown-300 {
+  color: #A1887F;
+  transition: color 250ms ease-in-out;
+}
+.tx-brown-300:hover {
+  color: rgb(150.2027027027, 122.3310810811, 112.2972972973);
+}
+
+.bg-brown-300 {
+  background-color: #A1887F;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-brown-400 {
+  color: #8D6E63;
+  transition: color 250ms ease-in-out;
+}
+.tx-brown-400:hover {
+  color: rgb(126.01875, 98.3125, 88.48125);
+}
+
+.bg-brown-400 {
+  background-color: #8D6E63;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-brown-500 {
+  color: #795548;
+  transition: color 250ms ease-in-out;
+}
+.tx-brown-500:hover {
+  color: rgb(105.0129533679, 73.7694300518, 62.4870466321);
+}
+
+.bg-brown-500 {
+  background-color: #795548;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-brown-600 {
+  color: #6D4C41;
+  transition: color 250ms ease-in-out;
+}
+.tx-brown-600:hover {
+  color: rgb(93.025862069, 64.8620689655, 55.474137931);
+}
+
+.bg-brown-600 {
+  background-color: #6D4C41;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-brown-700 {
+  color: #5D4037;
+  transition: color 250ms ease-in-out;
+}
+.tx-brown-700:hover {
+  color: rgb(76.9763513514, 52.972972973, 45.5236486486);
+}
+
+.bg-brown-700 {
+  background-color: #5D4037;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-brown-800 {
+  color: #4E342E;
+  transition: color 250ms ease-in-out;
+}
+.tx-brown-800:hover {
+  color: rgb(61.9596774194, 41.3064516129, 36.5403225806);
+}
+
+.bg-brown-800 {
+  background-color: #4E342E;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-brown-900 {
+  color: #3E2723;
+  transition: color 250ms ease-in-out;
+}
+.tx-brown-900:hover {
+  color: rgb(45.7010309278, 28.7474226804, 25.7989690722);
+}
+
+.bg-brown-900 {
+  background-color: #3E2723;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-gray-50 {
+  color: #FAFAFA;
+  transition: color 250ms ease-in-out;
+}
+.tx-gray-50:hover {
+  color: rgb(237.25, 237.25, 237.25);
+}
+
+.bg-gray-50 {
+  background-color: #FAFAFA;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-gray-100 {
+  color: #F5F5F5;
+  transition: color 250ms ease-in-out;
+}
+.tx-gray-100:hover {
+  color: rgb(232.25, 232.25, 232.25);
+}
+
+.bg-gray-100 {
+  background-color: #F5F5F5;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-gray-200 {
+  color: #EEEEEE;
+  transition: color 250ms ease-in-out;
+}
+.tx-gray-200:hover {
+  color: rgb(225.25, 225.25, 225.25);
+}
+
+.bg-gray-200 {
+  background-color: #EEEEEE;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-gray-300 {
+  color: #E0E0E0;
+  transition: color 250ms ease-in-out;
+}
+.tx-gray-300:hover {
+  color: rgb(211.25, 211.25, 211.25);
+}
+
+.bg-gray-300 {
+  background-color: #E0E0E0;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-gray-400 {
+  color: #BDBDBD;
+  transition: color 250ms ease-in-out;
+}
+.tx-gray-400:hover {
+  color: rgb(176.25, 176.25, 176.25);
+}
+
+.bg-gray-400 {
+  background-color: #BDBDBD;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-gray-500 {
+  color: #9E9E9E;
+  transition: color 250ms ease-in-out;
+}
+.tx-gray-500:hover {
+  color: rgb(145.25, 145.25, 145.25);
+}
+
+.bg-gray-500 {
+  background-color: #9E9E9E;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-gray-600 {
+  color: #757575;
+  transition: color 250ms ease-in-out;
+}
+.tx-gray-600:hover {
+  color: rgb(104.25, 104.25, 104.25);
+}
+
+.bg-gray-600 {
+  background-color: #757575;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-gray-700 {
+  color: #616161;
+  transition: color 250ms ease-in-out;
+}
+.tx-gray-700:hover {
+  color: rgb(84.25, 84.25, 84.25);
+}
+
+.bg-gray-700 {
+  background-color: #616161;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-gray-800 {
+  color: #424242;
+  transition: color 250ms ease-in-out;
+}
+.tx-gray-800:hover {
+  color: rgb(53.25, 53.25, 53.25);
+}
+
+.bg-gray-800 {
+  background-color: #424242;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-gray-900 {
+  color: #212121;
+  transition: color 250ms ease-in-out;
+}
+.tx-gray-900:hover {
+  color: rgb(20.25, 20.25, 20.25);
+}
+
+.bg-gray-900 {
+  background-color: #212121;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-gray-50 {
+  color: #ECEFF1;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-gray-50:hover {
+  color: rgb(221.3181818182, 226.6363636364, 230.1818181818);
+}
+
+.bg-blue-gray-50 {
+  background-color: #ECEFF1;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-gray-100 {
+  color: #CFD8DC;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-gray-100:hover {
+  color: rgb(192.2530120482, 204.0180722892, 209.2469879518);
+}
+
+.bg-blue-gray-100 {
+  background-color: #CFD8DC;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-gray-200 {
+  color: #B0BEC5;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-gray-200:hover {
+  color: rgb(161.295620438, 177.901459854, 186.204379562);
+}
+
+.bg-blue-gray-200 {
+  background-color: #B0BEC5;
+  color: #212529;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-gray-300 {
+  color: #90A4AE;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-gray-300:hover {
+  color: rgb(129.2578125, 151.9140625, 163.2421875);
+}
+
+.bg-blue-gray-300 {
+  background-color: #90A4AE;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-gray-400 {
+  color: #78909C;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-gray-400:hover {
+  color: rgb(105.9807692308, 131.6730769231, 144.5192307692);
+}
+
+.bg-blue-gray-400 {
+  background-color: #78909C;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-gray-500 {
+  color: #607D8B;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-gray-500:hover {
+  color: rgb(85.5829787234, 111.4361702128, 123.9170212766);
+}
+
+.bg-blue-gray-500 {
+  background-color: #607D8B;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-gray-600 {
+  color: #546E7A;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-gray-600:hover {
+  color: rgb(73.6019417476, 96.3834951456, 106.8980582524);
+}
+
+.bg-blue-gray-600 {
+  background-color: #546E7A;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-gray-700 {
+  color: #455A64;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-gray-700:hover {
+  color: rgb(58.5887573964, 76.4201183432, 84.9112426036);
+}
+
+.bg-blue-gray-700 {
+  background-color: #455A64;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-gray-800 {
+  color: #37474F;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-gray-800:hover {
+  color: rgb(44.5335820896, 57.4888059701, 63.9664179104);
+}
+
+.bg-blue-gray-800 {
+  background-color: #37474F;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.tx-blue-gray-900 {
+  color: #263238;
+  transition: color 250ms ease-in-out;
+}
+.tx-blue-gray-900:hover {
+  color: rgb(27.6914893617, 36.4361702128, 40.8085106383);
+}
+
+.bg-blue-gray-900 {
+  background-color: #263238;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+/*# sourceMappingURL=print.css.map */
